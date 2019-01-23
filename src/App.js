@@ -17,13 +17,13 @@ class App extends React.Component {
 
     console.log("compmount")
     //for static
-    // this.parsedata(reactjsPosts.data.children)
+    this.parsedata(reactjsPosts.data.children)
 
     //for live data 
-    fetch('http://www.reddit.com/r/reactjs.json')
-    .then(res => res.json())
-    .then(json => this.parsedata(json.data.children))
-    .catch(err => console.log(err));
+   // fetch('http://www.reddit.com/r/reactjs.json')
+   // .then(res => res.json())
+   // .then(json => this.parsedata(json.data.children))
+    //.catch(err => console.log(err));
 
     
   }
